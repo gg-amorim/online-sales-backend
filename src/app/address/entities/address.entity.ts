@@ -14,14 +14,11 @@ export class AddressEntity {
   @Column({ name: 'user_id', nullable: false })
   userId: number;
 
-  @Column({ name: 'email', nullable: false })
-  email: string;
-
   @Column({ name: 'complement', nullable: true })
   complement: string;
 
   @Column({ name: 'number', nullable: false })
-  numberAddress: string;
+  numberAddress: number;
 
   @Column({ name: 'cep', nullable: false })
   cep: string;
